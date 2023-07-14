@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inder";
+}
+
+.LoginPage{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    padding:10% 0%;
+    width:80%;
+    margin: auto;
+}
+
+.active{
+    padding-bottom:10px;
+    border-bottom: 3px solid #00C2FF;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-right:10%;
+}
+
+.podcast-img{
+    width: 500px;
+    margin-top:20px;
+}
+
+.container h1{
+    font-size:60px;
+    width: 207px;
+    border: none;
+}
+.container h2{
+    font-family: Inder;
+    font-size: 30px;
+    width:500px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: justify;
+    color:#3f3c3c;
+    margin-top:20px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    margin-left:10%;
+    margin-top:5%;
+}
+
+.positions{
+    display: flex;
+    justify-content: space-around !important;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input{
+    width: 300px;
+    height: 45px;
+    background: #D9D9D9;
+    font-family: Inder;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    outline:none;
+    border:none;
+    margin-block:10px;
+    padding-inline:35px;
+    border-radius: 3px;
+}
+
+.email{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    top:23px;
+    left:10px;
+
+}
+
+.inner-inp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+}
+
+.password{
+    position: relative;
+}
+
+.name{
+    position: relative;
+}
+
+.password-icon{
+    position: absolute;
+    top:22px;
+    left:8px;
+
+}
+
+.inner-inp label{
+    margin-left:15px;
+    font-family: Inder;
+    font-size: 13px;
+    font-weight: 700;
+    color: #00C2FF;
+}
+
+.forgot-pass{
+    font-family: Inder;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    color: #00C2FF;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+
+input[type=checkbox]{
+    width: auto;
+    height: 10px;
+    margin-left:5px;
+    transform: scale(2);
+}
+
+.inputs button{
+    width: 300px;
+    height: 45px;
+    color:white;
+    border:none;
+    font-size:20px;
+    background: #00C2FF;
+    margin-block:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-section{
+    display: flex;
+    height:100vh;
+    overflow: hidden;
+}
+
+.side-bar{
+    width:20%;
+    background-color:#2b2a2a;
+    color:#D9D9D9;
+    padding:3% 1%;
+}
+
+.profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    /* margin-bottom: -20px; */
+}
+
+.profile{
+    height:50px;
+    width:50px;
+    background-color: #00C2FF;
+    border-radius: 50%;
+}
+
+.side-bar h1{
+    margin-inline-start:15px;
+    font-size:20px;
+    font-weight: 500;
+}
+
+.side-content{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    margin-top:-20px;
+}
+
+.options{
+    background-color: #ebe5e5;
+    height:45px;
+    border-radius:10px;
+    width:80%;
+    display: flex;
+    align-items: center;
+    padding-left:50px;
+    color:#2b2a2a;
+    cursor: pointer;
+    margin-top:68px;
+}
+
+.main-page{
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    padding-inline:10px;
+    box-sizing:content-box;
+}
+
+.form input::placeholder, textarea::placeholder{
+    color:#000000;
+}
+
+select{
+    margin-top: 10px;
+    height:30px;
+    padding-inline:5px;
+    size: 10px;
+}
+
+.inner-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.name-inputs-1{
+    display: flex;
+    flex-direction: column;
+    margin-inline-end:10px;
+}
+
+.name-inputs-2{
+    display: flex;
+    flex-direction: column;
+    margin-inline-start:10px;
+}
+
+textarea{
+    resize: none;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.inner-form textarea{
+    margin-top: 10px;
+}
+
+.tags-input, .artist-input, .category-input{
+    height:30px;
+    margin-block-start:10px;
+}
+
+.name-inputs-2 button{
+    background-color: #2b2a2a;
+    border:none;
+    padding:10px 20px;
+    color:white;
+    cursor: pointer;
+    margin-top:10px;
+}
+
+.side-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-footer p{
+    margin-inline: 15px;
+}
+
+.user-main-page{
+    display: flex;
+    flex-direction: column;
+    padding:3% 5%;
+    width:80%;
+    background-color: #3f3c3c;
+    color: white;
+}
+
+.top-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.search-bar{
+    position: relative;
+}
+
+.search-bar input{
+    width:300px;
+    height:40px;
+    background-color: #2d2d2e;
+    outline: none;
+    border:none;
+    color:white;
+    border-radius: 12px;
+    padding-inline:38px 10px;
+    font-size: 18px;
+}
+
+.search-bar input::placeholder{
+    color: white;
+}
+
+.search-icon{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.insert-btn{
+    position: relative;
+    margin-left: auto;
+}
+
+.insert-btn button{
+    background-color: #2d2d2e;
+    outline: none;
+    border:none;
+    color:white;
+    border-radius: 12px;
+    font-size: 18px;
+    padding-block: 10px;
+    padding-inline:40px 20px;
+    cursor: pointer;
+}
+
+.main-part{
+    overflow-x: auto;
+    height:75vh;
+    margin-block:40px;
+}
+
+.podcast-list{
+    display: flex;
+    width:97%;
+    overflow-x: auto;
+    margin-block: 0px 20px;
+}
+
+.podcast-list::-webkit-scrollbar {
+    height: 3px;
+  }
+
+.podcast-list::-webkit-scrollbar-thumb {
+background-color: #c5c2c5;
+}
+
+.podcast-list::-webkit-scrollbar-track {
+background-color: #2f2f2f;
+}
+
+.main-part{
+    padding-right: 1px;
+}
+
+.main-part::-webkit-scrollbar {
+width: 5px;
+}
+
+.main-part::-webkit-scrollbar-thumb {
+background-color: #c5c2c5;
+}
+
+.main-part::-webkit-scrollbar-track {
+background-color: #2f2f2f;
+}
+
+.podcast{
+    padding:20px 10px;
+    background-color: #333233;
+    margin:15px 15px 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+}
+
+h5{
+    width:95%;
+    margin:auto;
+}
+
+.cover-image{
+    height: 150px;
+    width:150px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.podcast-main-page{
+    display: flex;
+    flex-direction: column;
+    padding:3% 5%;
+    background-color: #3f3c3c;
+    color: white;
+}
+
+.iframe-container{
+    width:100%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.iframe{
+    width:100%;
+    height:252px;
+    margin-block:50px 10px;
+    display: block;
+}
+
+.podcast-main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.podcast-inner-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.podcast-description span, .podcast-info span{
+    text-align: justify;
+    font-size:17px;
+    display: inline-block;
+    margin-block-end: 10px;
+    color:rgb(141, 136, 136);
+}
+
+.podcast-description{
+    width:100%;
+    text-align: justify;
+    margin-block: 10px;
+    font-size:18px;
+    padding:10px 30px 30px;
+    background-color: #2d2d2e;
+    border-radius:10px;
+    color:white;
+}
+
+.podcast-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.podcast-info div{
+    padding:10px 15px;
+    background-color: #2d2d2e;
+    font-size: 18px;
+    border-radius: 10px;
+    width:400px;
+    margin:10px;
+}
+
+.header-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top:20px;
+}
+
+.header-part button{
+    background-color: #2d2d2e;
+    outline: none;
+    border:none;
+    color:white;
+    border-radius: 12px;
+    font-size: 18px;
+    padding-block: 10px;
+    padding-inline:40px 20px;
+    cursor: pointer;
+}
+
+.liked-podcast-container{
+
+    display: flex;
+    flex-direction: row;
+    background-color: #3f3c3c;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.liked-podcast{
+    display: flex;
+    flex-direction: row;
+    width:48%;
+    padding:10px;
+    background-color: #2d2d2e;
+    border-radius: 10px;
+    margin-right:10px;
+    margin-block:10px;
+    overflow-y: auto;
+}
+
+
+.liked-podcast::-webkit-scrollbar {
+    height: 3px;
+  }
+
+.liked-podcast::-webkit-scrollbar-thumb {
+background-color: #c5c2c5;
+}
+
+.liked-podcast::-webkit-scrollbar-track {
+background-color: #2f2f2f;
+}
+
+.liked-podcast img{
+    height:200px;
+    width:170px;
+}
+.liked-podcast-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0px 20px;
+    width:100%;
+    padding-block:10px;
+}
+
+.liked-podcast h5{
+    font-size: 18px;
+    margin-block: 0px;
+    color:white;
+    margin-inline:0px;
+}
+
+.liked-podcast p{
+    font-size:14px;
+}
+
+.liked-podcast button{
+    background-color: #ffffff;
+    outline: none;
+    border:none;
+    color:rgb(30, 30, 30);
+    border-radius: 12px;
+    font-size: 15px;
+    padding-block: 10px;
+    padding-inline:10px;
+    cursor: pointer;
+    width:100%;
+    font-weight: 600;
+}
+
+.liked-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
